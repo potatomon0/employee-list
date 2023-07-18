@@ -27,7 +27,49 @@
 .App-link {
   color: #61dafb;
 }
-
+.mainContainer{
+  border:solid black;
+  margin:1em;
+  width:800px;
+  height:700px;
+  display:flex;
+}
+.leftContainer{
+  border:solid orange;
+  height:98%;
+  width:49%;
+  margin:1px;
+}
+.rightContainer{
+  border:solid brown;
+  height:98%;
+  width:49%;
+  margin:1px;
+}
+.leftFirst{
+  border: solid rgb(53, 167, 205);
+  height:7%;
+  margin:1px;
+}
+.leftSecond{
+  border: solid green;
+  height:7%;
+  margin:1px;
+}
+.leftThird{
+  border: solid rgb(207, 46, 207);
+  height:82%;
+  margin:1px;
+}
+.searchBar{
+  width:350px;
+  height:38px;
+  margin:1px;
+  border-radius:10px;
+  border: solid rgb(205, 201, 201);
+  outline: none;
+  text-align:center;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
