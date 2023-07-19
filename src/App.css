@@ -70,6 +70,24 @@
   outline: none;
   text-align:center;
 }
+.ListItem{
+  border:solid red;
+  height:15%;
+  margin:1px;
+  display:flex;
+}
+.avatar{
+  border:solid black 2px;
+  height:75px;
+  width:75px;
+  border-radius: 50px;
+  margin:1px;
+}
+.info{
+  border:solid black 2px;
+  width:77%;
+  margin:1px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
