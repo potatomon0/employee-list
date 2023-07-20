@@ -1,17 +1,15 @@
-import React, {useState} from 'react'
+import React, {useState,useContext} from 'react'
 import EmployeeListItem from './EmployeeListItem'
+import {AppContext} from '../App'
 
 
-// const state = {
-//   employees
-// }
-export default function EmployeeList(props) {
-  const [current, setCurrent] = useState(0)
+export default function EmployeeList() {
+  const {employees} = useContext(AppContext)
   return (
     <div className = 'leftThird' >
     {/* <EmployeeListItem employee={props.employees[0]}/> */}
-    {props.employees.map((x)=>{
-      return <EmployeeListItem employees={props.employee} employee={x}/>
+    {employees.map((x)=>{
+      return <EmployeeListItem employees={employees} employee={x}/>
     })}
     </div>
   )

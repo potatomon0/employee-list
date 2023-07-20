@@ -2,18 +2,15 @@ import React, {useState,useContext} from 'react'
 import Header from './Header'
 import SearchBar from './SearchBar'
 import EmployeeList from './EmployeeList'
-import {AppContext} from '../contexts/app_context'
+import {AppContext} from '../App'
 
-function HomePage(props) {
-  // let [employee, setEmployee] = useContext(AppContext)
-  // const state = {
-    
-  // }
+function HomePage() {
+  const {employees}=useContext(AppContext)
   return (
     <div className = 'leftContainer'>
         <Header />
         <SearchBar />
-        <EmployeeList employees={props.employees}/>
+        <EmployeeList />
         {/* <h2>{props.employees[0].name}</h2> */}
     </div>
   )

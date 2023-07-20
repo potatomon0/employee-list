@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import EmployeePage from './EmployeePage'
+import {AppContext} from '../App'
 
 export default function EmployeeListItem(props) {
-
+  const {employee}=useContext(AppContext)
   return (
     <div className = 'ListItem'>
         <img src={props.employee.img} alt="" className = 'avatar'/>
