@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
+import EmployeePage from './EmployeePage'
 
 export default function EmployeeListItem(props) {
+
   return (
     <div className = 'ListItem'>
         <img src={props.employee.img} alt="" className = 'avatar'/>

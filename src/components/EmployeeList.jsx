@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import EmployeeListItem from './EmployeeListItem'
 
 
@@ -6,19 +6,13 @@ import EmployeeListItem from './EmployeeListItem'
 //   employees
 // }
 export default function EmployeeList(props) {
+  const [current, setCurrent] = useState(0)
   return (
     <div className = 'leftThird' >
-        {/* <h3>{employees.map((x)=>{
-        return <EmployeeListItem  x = {x} /> 
+    {/* <EmployeeListItem employee={props.employees[0]}/> */}
+    {props.employees.map((x)=>{
+      return <EmployeeListItem employees={props.employee} employee={x}/>
     })}
-    </h3>*/}
-    {/* <EmployeeListItem employees={props.employees}/> */}
-    <EmployeeListItem employee={props.employees[0]}/>
-    <EmployeeListItem employee={props.employees[1]}/>
-    <EmployeeListItem employee={props.employees[2]}/>
-    <EmployeeListItem employee={props.employees[3]}/>
-    <EmployeeListItem employee={props.employees[4]}/>
-    <EmployeeListItem employee={props.employees[5]}/>
     </div>
   )
 }

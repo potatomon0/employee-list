@@ -25,4 +25,5 @@ const employeeInfo = [
         img:'https://cdn3.vectorstock.com/i/1000x1000/20/67/woman-avatar-profile-vector-21372067.jpg'
     }
 ]
-module.exports =  employeeInfo
+const headerTitle =  ['Employee Directory','Employee']
+module.exports =  employeeInfo, headerTitle
