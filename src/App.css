@@ -1,18 +1,15 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,7 +20,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
@@ -50,6 +46,9 @@
   border: solid rgb(53, 167, 205);
   height:7%;
   margin:1px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
 }
 .leftSecond{
   border: solid green;
@@ -64,11 +63,12 @@
 .searchBar{
   width:350px;
   height:38px;
-  margin:1px;
+  margin:2px;
   border-radius:10px;
   border: solid rgb(205, 201, 201);
   outline: none;
   text-align:center;
+  margin-left:13px;
 }
 .ListItem{
   border:solid red;
@@ -87,6 +87,56 @@
   border:solid black 2px;
   width:77%;
   margin:1px;
+}
+/* .infoMain{
+  padding:15px;
+  border: 2px solid gray;
+  border-radius:8px;
+  height:70%;
+  margin:10px;
+} */
+.name{
+  font-size:20px;
+  font-weight:600;
+}
+.title{
+  font-size:15px;
+  font-weight:400;
+}
+.top{
+  display:flex;
+  border:2px solid gray;
+  width:91%;
+  height:100px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top:15px;
+  margin-left:15px;
+  margin-right:15px;
+}
+.topInfo{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  padding-left:20px;
+}
+.avatar2{
+  border:solid black 2px;
+  height:85px;
+  width:85px;
+  border-radius: 50px;
+  margin:1px;
+  align-self:center;
+  margin-left:10px;
+}
+.item{
+  margin-left:15px;
+  margin-right:15px;
+  width:91%;
+  border:2px solid gray;
+  height:70px;
+  align-self:center;
+  padding-left:10px;
 }
 @keyframes App-logo-spin {
   from {

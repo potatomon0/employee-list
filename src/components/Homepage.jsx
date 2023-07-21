@@ -5,13 +5,11 @@ import EmployeeList from './EmployeeList'
 import {AppContext} from '../App'
 
 function HomePage() {
-  const {employees}=useContext(AppContext)
   return (
     <div className = 'leftContainer'>
-        <Header />
+        <Header header="Employee Directory"/>
         <SearchBar />
         <EmployeeList />
-        {/* <h2>{props.employees[0].name}</h2> */}
     </div>
   )
 }
